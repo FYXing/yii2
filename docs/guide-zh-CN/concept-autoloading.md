@@ -37,8 +37,8 @@ $classFile = Yii::getAlias('@' . str_replace('\\', '/', $className) . '.php');
 因此，你可以把前端的类放在 `frontend` 命名空间，而后端的类放在 `backend`。 
 这样这些类就可以被 Yii 自动加载了。
 
-To add a custom namespace to the autoloader you need to define an alias for the base directory of the namespace using [[Yii::setAlias()]].
-For example to load classes in the `foo` namespace that are located in the `path/to/foo` directory you will call `Yii::setAlias('@foo', 'path/to/foo')`.
+要向自动加载器添加一个自定义命名空间，您需要利用 `[[Yii::setAlias()]]` 为命名空间所在的基目录定义一个别名。
+例如，要加载位于目录 `path/to/foo` 的命名空间为 `foo` 中的类时，你必须声明 `Yii::setAlias('@foo', 'path/to/foo')` 。
 
 类映射表（Class Map） <span id="class-map"></span>
 ---------
